@@ -938,7 +938,10 @@ document.addEventListener("DOMContentLoaded", () =>{
         let filteredArray = DefinitionOfPrefectures.filter((single)=> {
           return single.code == randomCode;
         });
-        alert(`來啦！${langDict[filteredArray[0].name]["ja"]}玩耍`);
+        
+        setTimeout(() => {
+          alert(`來啦！${langDict[filteredArray[0].name]["ja"]}玩耍`);
+        }, 50);
       }, 1000);
     }
   });
